@@ -32,7 +32,7 @@ class ERSVM:
         self.eta[ind_sorted[int(np.ceil(m * self.mu) - 1)]] -= np.ceil(m * self.mu) - m * self.mu
         self.eta = 1 - self.eta
 
-    def calc_accuracy(self, x_test, y_test):
+    def score(self, x_test, y_test):
         num, dim = x_test.shape
         dv = np.dot(x_test, self.weight) + self.bias
         return sum(dv * y_test > 0 + 1e-9) / float(num)
