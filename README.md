@@ -1,5 +1,7 @@
 # Extended Robust Support Vector Machine
 
+[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+
 ## Basic Usage
 
 ```python
