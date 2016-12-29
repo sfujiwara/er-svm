@@ -2,6 +2,11 @@
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
+## Requirements
+
+* [NumPy](http://www.numpy.org/)
+* CPLEX
+
 ## Basic Usage
 
 ```python
