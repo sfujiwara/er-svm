@@ -2,6 +2,11 @@
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
+## Requirements
+
+* [NumPy](http://www.numpy.org/)
+* CPLEX
+
 ## Basic Usage
 
 ```python
@@ -29,6 +34,7 @@ print "bias: {}".format(clf.bias)
 print "alpha: {}".format(clf.alpha)
 print "iteration: {}".format(clf.total_itr)
 print "accuracy: {}".format(clf.score(x, y))
+<<<<<<< HEAD
 
 # ER-SVM with heuristic VaR minimization algorithm
 clf = ersvm.HeuristicERSVM(nu=nu, initial_weight=np.ones(dim))
@@ -39,3 +45,6 @@ print "bias: {}".format(clf.bias)
 print "iteration: {}".format(clf.total_itr)
 print "accuracy: {}".format(clf.score(x, y))
 ```
+=======
+```
+>>>>>>> 58c5fe230dea2dbcb80b3364cf47423b5054e744
