@@ -20,12 +20,22 @@ y = np.array([1.] * num_p + [-1.] * num_n)
 nu = 0.65
 mu = 0.1
 
-clf = ersvm.ERSVM(nu=nu, mu=mu, initial_w=np.ones(dim), initial_b=0)
+# ER-SVM with DCA
+clf = ersvm.ERSVM(nu=nu, mu=mu, initial_w=np.ones(dim))
 clf.fit(x, y)
 
 print "weight: {}".format(clf.weight)
 print "bias: {}".format(clf.bias)
 print "alpha: {}".format(clf.alpha)
+print "iteration: {}".format(clf.total_itr)
+print "accuracy: {}".format(clf.score(x, y))
+
+# ER-SVM with heuristic VaR minimization algorithm
+clf = ersvm.HeuristicERSVM(nu=nu, initial_weight=np.ones(dim))
+clf.fit(x, y)
+
+print "weight: {}".format(clf.weight)
+print "bias: {}".format(clf.bias)
 print "iteration: {}".format(clf.total_itr)
 print "accuracy: {}".format(clf.score(x, y))
 ```
