@@ -35,7 +35,7 @@ print "alpha: {}".format(clf.alpha)
 print "iteration: {}".format(clf.total_itr)
 print "accuracy: {}".format(clf.score(x, y))
 
-# ER-SVM with heuristic VaR minimization algorithm
+# ER-SVM with heuristic algorithm [Takeda et al., 2014]
 clf = ersvm.HeuristicERSVM(nu=nu, initial_weight=np.ones(dim))
 clf.fit(x, y)
 
@@ -44,3 +44,7 @@ print "bias: {}".format(clf.bias)
 print "iteration: {}".format(clf.total_itr)
 print "accuracy: {}".format(clf.score(x, y))
 ```
+
+## References
+
+* A. Takeda, S. Fujiwara, and T. Kanamori. Extended robust support vector machine based on financial risk minimization. Neural Computation, 26(11):2541–2569, 2014.
