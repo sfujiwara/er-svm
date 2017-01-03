@@ -84,7 +84,7 @@ class EnuSVM:
             # Update norm constraint
             if self.update_rule == 'projection':
                 w_tilde = self.weight / np.linalg.norm(self.weight)
-            elif update_rule == 'lin_comb':
+            elif self.update_rule == 'lin_comb':
                 w_tilde = self.gamma * w_tilde + (1-self.gamma) * self.weight
             else:
                 'ERROR: Input valid update rule'
