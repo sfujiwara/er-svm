@@ -25,7 +25,7 @@ y = np.array([1.] * num_p + [-1.] * num_n)
 nu = 0.65
 mu = 0.1
 
-# ER-SVM with DCA
+# ER-SVM with DCA [Fujiwara et al., 2014]
 clf = ersvm.ERSVM(nu=nu, mu=mu, initial_w=np.ones(dim))
 clf.fit(x, y)
 
@@ -47,4 +47,5 @@ print "accuracy: {}".format(clf.score(x, y))
 
 ## References
 
-* A. Takeda, S. Fujiwara, and T. Kanamori. Extended robust support vector machine based on financial risk minimization. Neural Computation, 26(11):2541–2569, 2014.
+* A. Takeda, S. Fujiwara, and T. Kanamori, "Extended robust support vector machine based on financial risk minimization", Neural Computation, 26(11):2541–2569, 2014.
+* S. Fujiwara, A. Takeda, and T. Kanamori, "[DC Algorithm for Extended Robust Support Vector Machine](http://www.keisu.t.u-tokyo.ac.jp/research/techrep/data/2014/METR14-38.pdf)", Mathematical Engineering Technical Reports, 2014.
