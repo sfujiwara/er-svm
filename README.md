@@ -6,7 +6,7 @@ This repository includes implementations of the algorithms for Extended Robust S
 
 ### Note
 
-> The main logic of DC algorithm and heuristic algorithm for ER-SVM are written in [`ersvm_dca_2016.py`](ersvm/ersvm_dca_2016.py) and [`ersvm_heuristics_2014.py`](ersvm/ersvm_heuristics_2014.py) respectively.
+> The main logic of DC algorithm [ [Fujiwara et al., 2014] ](http://www.keisu.t.u-tokyo.ac.jp/research/techrep/data/2014/METR14-38.pdf) and heuristic algorithm [Takeda et al., 2014] for ER-SVM are written in [`ersvm_dca_2016.py`](ersvm/ersvm_dca_2016.py) and [`ersvm_heuristics_2014.py`](ersvm/ersvm_heuristics_2014.py) respectively.
 
 
 ## Requirements
