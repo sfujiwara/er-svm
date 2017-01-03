@@ -1,2 +1,2 @@
-from ersvmdca import ERSVM
-from ersvmh import HeuristicERSVM
+from ersvm_dca_2016 import ERSVM
+from ersvm_heuristics_2014 import HeuristicERSVM
