@@ -2,6 +2,13 @@
 
 [![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
+This repository includes implementations of the algorithms for Extended Robust SVM (ER-SVM) proposed in [Takeda et al., 2014] and [ [Fujiwara et al., 2014] ](http://www.keisu.t.u-tokyo.ac.jp/research/techrep/data/2014/METR14-38.pdf).
+
+### Note
+
+> The main logic of DC algorithm and heuristic algorithm for ER-SVM are written in [`ersvm_dca_2016.py`](ersvm/ersvm_dca_2016.py) and [`ersvm_heuristics_2014.py`](ersvm/ersvm_heuristics_2014.py) respectively.
+
+
 ## Requirements
 
 * [NumPy](http://www.numpy.org/)
