@@ -1,6 +1,6 @@
 # Extended Robust Support Vector Machine
 
-[![MIT License](http://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
+[![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
 This repository includes implementations of the algorithms for Extended Robust SVM (ER-SVM) proposed in [Takeda et al., 2014] and [ [Fujiwara et al., 2014] ](http://www.keisu.t.u-tokyo.ac.jp/research/techrep/data/2014/METR14-38.pdf).
 
