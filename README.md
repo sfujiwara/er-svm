@@ -2,11 +2,11 @@
 
 [![MIT License](https://img.shields.io/badge/license-MIT-blue.svg?style=flat)](LICENSE)
 
-This repository includes implementations of the algorithms for Extended Robust SVM (ER-SVM) proposed in [Takeda et al., 2014] and [ [Fujiwara et al., 2014] ](http://www.keisu.t.u-tokyo.ac.jp/research/techrep/data/2014/METR14-38.pdf).
+This repository includes implementations of the algorithms for Extended Robust SVM (ER-SVM) proposed in [ [Takeda et al., 2014] ](http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00647#.WPzNDFOLQp8) and [ [Fujiwara et al., 2017] ](http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00958).
 
 ### Note
 
-> The main logic of DC algorithm [ [Fujiwara et al., 2014] ](http://www.keisu.t.u-tokyo.ac.jp/research/techrep/data/2014/METR14-38.pdf) and heuristic algorithm [Takeda et al., 2014] for ER-SVM are written in [`ersvm_dca_2016.py`](ersvm/ersvm_dca_2016.py) and [`ersvm_heuristics_2014.py`](ersvm/ersvm_heuristics_2014.py) respectively.
+> The main logic of DC algorithm [ [Fujiwara et al., 2014] ](http://www.keisu.t.u-tokyo.ac.jp/research/techrep/data/2014/METR14-38.pdf) and heuristic algorithm [Takeda et al., 2014] for ER-SVM are written in [`ersvm_dca_2017.py`](ersvm/ersvm_dca_2016.py) and [`ersvm_heuristics_2014.py`](ersvm/ersvm_heuristics_2014.py) respectively.
 
 
 ## Requirements
@@ -54,5 +54,6 @@ print "accuracy: {}".format(clf.score(x, y))
 
 ## References
 
-* A. Takeda, S. Fujiwara, and T. Kanamori, "Extended robust support vector machine based on financial risk minimization", Neural Computation, 26(11):2541–2569, 2014.
+* S. Fujiwara, A. Takeda, T. Kanamori, "[DC Algorithm for Extended Robust Support Vector Machine](http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00958)", Neural Computation, 29 (5), pp.1406--1438 (2017). DOI:10.1162/NECO_a_00958
 * S. Fujiwara, A. Takeda, and T. Kanamori, "[DC Algorithm for Extended Robust Support Vector Machine](http://www.keisu.t.u-tokyo.ac.jp/research/techrep/data/2014/METR14-38.pdf)", Mathematical Engineering Technical Reports, 2014.
+* A. Takeda, S. Fujiwara, and T. Kanamori, "[Extended robust support vector machine based on financial risk minimization](http://www.mitpressjournals.org/doi/abs/10.1162/NECO_a_00647)", Neural Computation, 26 (11), pp.2541–2569, (2014). DOI: 10.1162/NECO_a_00647
